@@ -1,0 +1,115 @@
+body{
+    font-family: "Shadows Into Light", cursive; 
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    min-height: calc(90vh - 16px);
+    gap: 16px;
+    max-width: 90%;
+    margin: calc(5vh) auto;
+    grid-template-areas:
+        "item1 item1 item1 item2 item2 item2 item3 item3 item4 item5 item6"
+        "item1 item1 item1 item2 item2 item2 item3 item3 item4 item5 item6"
+        "item1 item1 item1 item2 item2 item2 item3 item3 item10 item10 item10"
+        "item1 item1 item1 item2 item2 item2 item3 item3 item10 item10 item10"
+        "item7 item7 item8 item8 item9 item9 item9 item9 item10 item10 item10"
+        "item7 item7 item8 item8 item9 item9 item9 item9 item10 item10 item10"
+        "item7 item7 item8 item8 item9 item9 item9 item9 item10 item10 item10"
+        "item7 item7 item8 item8 item9 item9 item9 item9 item10 item10 item10"
+        "item11 item11 item11 item12 item12 item12 item12 item13 item13 item14 item14"
+        "item11 item11 item11 item12 item12 item12 item12 item13 item13 item14 item14"
+        "item11 item11 item11 item12 item12 item12 item12 item13 item13 item14 item14"
+        "item11 item11 item11 item12 item12 item12 item12 item13 item13 item14 item14"
+
+}
+.item1 {
+    grid-area: item1;
+    background-image:url("./images/plaza.jpg");
+}
+.item2 {
+    grid-area: item2;
+    background-image:url("./images/mar.jpg");
+}
+.item3 {
+    background-image:url("./images/beer.jpg");
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+    background-image: url("./images/cuadro1.PNG");
+}
+.item5 {
+    grid-area: item5;
+    background-image: url("./images/cuadro2.PNG");
+}
+.item6 {
+    grid-area: item6;
+    background-image: url("./images/cuadro3.PNG");
+}
+.item7 {
+    grid-area: item7;
+    background-image:url("./images/gato3.jpg");
+}
+.item8 {
+    grid-area: item8;
+    background-image: url("./images/planta1.jpg");
+}
+.item9 {
+    grid-area: item9;
+    background-image: url("./images/plaza1.jpg");
+}
+.item10 {
+    grid-area: item10;
+    background-image: url("./images/gato1.jpg");
+}
+.item11 {
+    grid-area: item11;
+    background-image: url("./images/perritos.jpeg");
+}
+.item12 {
+    grid-area: item12;
+    background-image: url("./images/gato2.jpg");
+}
+.item13 {
+    grid-area: item13;
+    background-image: url("./images/perrito1.jpeg");
+}
+.item14 {
+    grid-area: item14;
+    background-image: url("./images/letrero.jpg");
+}
+
+.bg-item {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    filter: grayscale(100%);
+  }
+  
+@media only screen and (max-width: 750px) {
+    .container {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 3000px;
+        gap: 8px;
+        min-width: 90%;
+        margin: 32px auto;
+        grid-template-areas: 
+            "item9 item9 item9"
+            "item12 item12 item12"
+            "item1 item1 item1"
+            "item4 item5 item6"
+            "item2 item2 item2"
+            "item7 item7 item7"
+            "item11 item11 item11"
+            "item13 item13 item13"
+            "item10 item10 item10" 
+            "item8 item8 item8"
+            "item3 item3 item3"
+            "item14 item14 item14";
+
+    }
+}
